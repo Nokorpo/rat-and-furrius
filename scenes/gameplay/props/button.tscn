@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://chov81hcsj8vx"]
 
-[ext_resource type="Texture2D" uid="uid://cwwyfi1rba1hi" path="res://assets/sprites/button_released.png" id="1_whgg7"]
+[ext_resource type="Texture2D" uid="uid://cwwyfi1rba1hi" path="res://assets/sprites/buttons/button_released.png" id="1_whgg7"]
 [ext_resource type="Script" path="res://scenes/gameplay/props/button.gd" id="2_gfnmk"]
 [ext_resource type="AudioStream" uid="uid://byqryh54qat26" path="res://assets/audio/mouse_snap.ogg" id="3_kln82"]
 

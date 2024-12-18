@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scenes/game_manager/game_manager.gd" id="1_woiw8"]
 [ext_resource type="Texture2D" uid="uid://r28s42mguoxy" path="res://assets/sprites/circle.svg" id="2_43sdy"]
-[ext_resource type="Texture2D" uid="uid://cp5ff11ecnu4r" path="res://assets/sprites/Clock.png" id="2_eqlv3"]
+[ext_resource type="Texture2D" uid="uid://cp5ff11ecnu4r" path="res://assets/sprites/clock.png" id="2_eqlv3"]
 [ext_resource type="Script" path="res://scenes/game_manager/end_game_timer.gd" id="2_ln6gs"]
 [ext_resource type="PackedScene" uid="uid://dv3kfiw88cwed" path="res://scenes/game_manager/curtain.tscn" id="2_wg7jd"]
 [ext_resource type="AudioStream" uid="uid://dtky6y0mv0gyv" path="res://assets/music/music_gameplay.ogg" id="3_7bieq"]

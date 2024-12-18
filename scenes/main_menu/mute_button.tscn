@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://cgxeglm2v7pad"]
 
-[ext_resource type="Texture2D" uid="uid://cyso1lfxpn0k" path="res://assets/sprites/mute_button_released.png" id="1_urxlu"]
+[ext_resource type="Texture2D" uid="uid://cyso1lfxpn0k" path="res://assets/sprites/buttons/button_mute_released.png" id="1_urxlu"]
 [ext_resource type="Script" path="res://scenes/main_menu/mute_button.gd" id="2_sedkj"]
 [ext_resource type="AudioStream" uid="uid://byqryh54qat26" path="res://assets/audio/mouse_snap.ogg" id="3_tiapp"]
 

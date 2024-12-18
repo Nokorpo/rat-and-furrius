@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cwwyfi1rba1hi"
-path="res://.godot/imported/button_released.png-06cc9f5165aef99e7c3b04f02bf5d6b5.ctex"
+uid="uid://dhokm1fwdudfg"
+path="res://.godot/imported/sword_g.png-9f53343ee570469b692e70d9ebf02af9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/button_released.png"
-dest_files=["res://.godot/imported/button_released.png-06cc9f5165aef99e7c3b04f02bf5d6b5.ctex"]
+source_file="res://assets/sprites/sword_g.png"
+dest_files=["res://.godot/imported/sword_g.png-9f53343ee570469b692e70d9ebf02af9.ctex"]
 
 [params]
 

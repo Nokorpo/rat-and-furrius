@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dop8nj5r7a62f"
-path="res://.godot/imported/Mouse_Sprite.png-c90d31a1e3455406f8c81bdedf816e23.ctex"
+uid="uid://bmof722angcsm"
+path="res://.godot/imported/cat_patrol_b.png-3fba0ba5b721a9293e1576e67a5bca58.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/Mouse_Sprite.png"
-dest_files=["res://.godot/imported/Mouse_Sprite.png-c90d31a1e3455406f8c81bdedf816e23.ctex"]
+source_file="res://assets/sprites/cats/cat_patrol_b.png"
+dest_files=["res://.godot/imported/cat_patrol_b.png-3fba0ba5b721a9293e1576e67a5bca58.ctex"]
 
 [params]
 

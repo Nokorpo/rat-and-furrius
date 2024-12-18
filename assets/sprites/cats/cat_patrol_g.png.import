@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://s4m1bx6pgp06"
-path="res://.godot/imported/Cat_AltB.png-76ca8f964f8dd501bc61f7c02a708691.ctex"
+uid="uid://oa6fug33uyv4"
+path="res://.godot/imported/cat_patrol_g.png-e53c6de7f6feb57eb7e9bb684665b5a9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/Cat_AltB.png"
-dest_files=["res://.godot/imported/Cat_AltB.png-76ca8f964f8dd501bc61f7c02a708691.ctex"]
+source_file="res://assets/sprites/cats/cat_patrol_g.png"
+dest_files=["res://.godot/imported/cat_patrol_g.png-e53c6de7f6feb57eb7e9bb684665b5a9.ctex"]
 
 [params]
 

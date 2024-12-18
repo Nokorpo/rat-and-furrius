@@ -6,9 +6,9 @@ class_name WeaponPick
 enum weapon_types { red, green, blue }
 
 const WEAPON_SPRITES := {
-	weapon_types.red: "res://assets/sprites/SwordR.png",
-	weapon_types.green: "res://assets/sprites/SwordG.png",
-	weapon_types.blue: "res://assets/sprites/SwordB.png"
+	weapon_types.red: "res://assets/sprites/sword_r.png",
+	weapon_types.green: "res://assets/sprites/sword_g.png",
+	weapon_types.blue: "res://assets/sprites/sword_b.png"
 }
 
 const WEAPON_COLORS := {

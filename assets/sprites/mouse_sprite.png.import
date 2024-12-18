@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://jhxvblt6yptk"
-path="res://.godot/imported/mute_button_pressed.png-730032337cfc6de90006eae5f401279e.ctex"
+uid="uid://dop8nj5r7a62f"
+path="res://.godot/imported/mouse_sprite.png-4bdb0be7f3b091c1cf328f258e833d7f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/mute_button_pressed.png"
-dest_files=["res://.godot/imported/mute_button_pressed.png-730032337cfc6de90006eae5f401279e.ctex"]
+source_file="res://assets/sprites/mouse_sprite.png"
+dest_files=["res://.godot/imported/mouse_sprite.png-4bdb0be7f3b091c1cf328f258e833d7f.ctex"]
 
 [params]
 

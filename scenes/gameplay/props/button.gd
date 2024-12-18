@@ -3,8 +3,8 @@ extends Sprite2D
 
 signal button_pressed
 
-@onready var _released_texture: Texture = load("res://assets/sprites/button_released.png")
-@onready var _pressed_texture: Texture = load("res://assets/sprites/button_pressed.png")
+@onready var _released_texture: Texture = load("res://assets/sprites/buttons/button_released.png")
+@onready var _pressed_texture: Texture = load("res://assets/sprites/buttons/button_pressed.png")
 @onready var _audio: AudioStreamPlayer = $AudioStreamPlayer
 @onready var _area: Area2D = $Area2D
 
@@ -17,4 +17,4 @@ func _on_area_2d_body_entered(body: Node2D) -> void:
 
 func reset_button() -> void:
 	_area.monitoring = true
-	texture = _pressed_texture
+	texture = _released_texture

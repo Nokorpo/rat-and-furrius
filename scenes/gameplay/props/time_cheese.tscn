@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=3 uid="uid://bxanlhtgoexvp"]
 
-[ext_resource type="Texture2D" uid="uid://vklv1acxd3xl" path="res://assets/sprites/Cheese.png" id="1_70x7b"]
+[ext_resource type="Texture2D" uid="uid://vklv1acxd3xl" path="res://assets/sprites/cheese.png" id="1_70x7b"]
 [ext_resource type="Script" path="res://scenes/gameplay/props/time_cheese.gd" id="2_1eolw"]
 [ext_resource type="Script" path="res://scenes/gameplay/enemies/enemy_weak_spot.gd" id="2_kr71m"]
 [ext_resource type="AudioStream" uid="uid://nm6kr6l5ek7h" path="res://assets/audio/sword_slash_cheese.ogg" id="4_gvcl6"]

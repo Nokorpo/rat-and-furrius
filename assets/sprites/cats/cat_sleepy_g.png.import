@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cf7pw8nfwjfr7"
-path="res://.godot/imported/circle_vision.png-40b258678b696bc9ba7b598edb6bda43.ctex"
+uid="uid://ceqjy7tvbysq3"
+path="res://.godot/imported/cat_sleepy_g.png-f0a7b48879e6e77719f20981e834dea7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/circle_vision.png"
-dest_files=["res://.godot/imported/circle_vision.png-40b258678b696bc9ba7b598edb6bda43.ctex"]
+source_file="res://assets/sprites/cats/cat_sleepy_g.png"
+dest_files=["res://.godot/imported/cat_sleepy_g.png-f0a7b48879e6e77719f20981e834dea7.ctex"]
 
 [params]
 

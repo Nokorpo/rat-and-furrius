@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=3 uid="uid://bpdqagyo7yown"]
 
 [ext_resource type="Script" path="res://scenes/gameplay/props/destroyable_box.gd" id="1_bmu5q"]
-[ext_resource type="Texture2D" uid="uid://f1kbpqa4yl53" path="res://assets/sprites/Box.png" id="1_f0gpv"]
+[ext_resource type="Texture2D" uid="uid://f1kbpqa4yl53" path="res://assets/sprites/box.png" id="1_f0gpv"]
 [ext_resource type="Script" path="res://scenes/gameplay/enemies/enemy_weak_spot.gd" id="3_je6cw"]
 [ext_resource type="AudioStream" uid="uid://spkc5vsnopx7" path="res://assets/audio/sword_slash_crate.ogg" id="4_m3n7q"]
 

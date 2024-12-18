@@ -1,11 +1,11 @@
 [gd_scene load_steps=14 format=3 uid="uid://bd1gi8jk1bb2o"]
 
 [ext_resource type="Script" path="res://scenes/gameplay/enemies/patrol_cat.gd" id="1_mb5vl"]
-[ext_resource type="Texture2D" uid="uid://knu73m62nu2o" path="res://assets/sprites/Cat_SleepyWIP.png" id="2_fa6an"]
+[ext_resource type="Texture2D" uid="uid://bqg0whd6da1jy" path="res://assets/sprites/cats/cat_sleepy_b.png" id="2_63mxm"]
 [ext_resource type="Script" path="res://scenes/gameplay/enemies/cat_sprite.gd" id="3_cv1dy"]
-[ext_resource type="Texture2D" uid="uid://sg7ejjrowlyy" path="res://assets/sprites/Cat_SleepyR.png" id="4_ngdde"]
+[ext_resource type="Texture2D" uid="uid://sg7ejjrowlyy" path="res://assets/sprites/cats/cat_sleepy_r.png" id="4_ngdde"]
 [ext_resource type="Script" path="res://scenes/gameplay/enemies/enemy_vision.gd" id="5_m4fif"]
-[ext_resource type="Texture2D" uid="uid://ceqjy7tvbysq3" path="res://assets/sprites/Cat_SleepyG.png" id="5_mobak"]
+[ext_resource type="Texture2D" uid="uid://ceqjy7tvbysq3" path="res://assets/sprites/cats/cat_sleepy_g.png" id="5_mobak"]
 [ext_resource type="Script" path="res://scenes/gameplay/enemies/enemy_weak_spot.gd" id="6_ettpo"]
 [ext_resource type="AudioStream" uid="uid://dqkhj7shfw01c" path="res://assets/audio/sound_sword_slash.ogg" id="6_tej0a"]
 [ext_resource type="Texture2D" uid="uid://7jxqgi0dt4ko" path="res://assets/sprites/circle_vision.svg" id="8_g78wn"]
@@ -27,12 +27,12 @@ script = ExtResource("1_mb5vl")
 [node name="Sprite2D" type="Sprite2D" parent="." node_paths=PackedStringArray("node_to_follow")]
 unique_name_in_owner = true
 scale = Vector2(0.185, 0.185)
-texture = ExtResource("2_fa6an")
+texture = ExtResource("2_63mxm")
 script = ExtResource("3_cv1dy")
 node_to_follow = NodePath("../PathFollow2D")
 sprite_red = ExtResource("4_ngdde")
 sprite_green = ExtResource("5_mobak")
-sprite_blue = ExtResource("2_fa6an")
+sprite_blue = ExtResource("2_63mxm")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 unique_name_in_owner = true

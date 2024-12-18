@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://knu73m62nu2o"
-path="res://.godot/imported/Cat_SleepyWIP.png-a2e11346df6ea74d6b3122e7e9bd7691.ctex"
+uid="uid://sg7ejjrowlyy"
+path="res://.godot/imported/cat_sleepy_r.png-0180fd0271a634078748ad57f6b43631.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/Cat_SleepyWIP.png"
-dest_files=["res://.godot/imported/Cat_SleepyWIP.png-a2e11346df6ea74d6b3122e7e9bd7691.ctex"]
+source_file="res://assets/sprites/cats/cat_sleepy_r.png"
+dest_files=["res://.godot/imported/cat_sleepy_r.png-0180fd0271a634078748ad57f6b43631.ctex"]
 
 [params]
 

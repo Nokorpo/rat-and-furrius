@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://h46qtjdwywi"
-path="res://.godot/imported/Cat_PatrolR.png-55a69f3b144e4ca660f9a345d9774772.ctex"
+uid="uid://2bah6ed83vgp"
+path="res://.godot/imported/button_pressed.png-80d82f23642e33601d3598b81ecbfde7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/Cat_PatrolR.png"
-dest_files=["res://.godot/imported/Cat_PatrolR.png-55a69f3b144e4ca660f9a345d9774772.ctex"]
+source_file="res://assets/sprites/buttons/button_pressed.png"
+dest_files=["res://.godot/imported/button_pressed.png-80d82f23642e33601d3598b81ecbfde7.ctex"]
 
 [params]
 

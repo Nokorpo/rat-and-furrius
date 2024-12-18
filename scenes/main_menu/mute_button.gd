@@ -3,8 +3,8 @@ extends Sprite2D
 
 signal button_pressed
 
-@onready var _released_texture: Texture = load("res://assets/sprites/mute_button_released.png")
-@onready var _pressed_texture: Texture = load("res://assets/sprites/mute_button_pressed.png")
+@onready var _released_texture: Texture = load("res://assets/sprites/buttons/button_mute_released.png")
+@onready var _pressed_texture: Texture = load("res://assets/sprites/buttons/button_mute_pressed.png")
 @onready var _audio: AudioStreamPlayer = $AudioStreamPlayer
 @onready var _area: Area2D = $Area2D
 @onready var _should_play_sounds: bool = !AudioServer.is_bus_mute(AudioServer.get_bus_index("Master"))

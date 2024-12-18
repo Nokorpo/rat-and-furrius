@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dy1ppjt2u3kfd"
-path="res://.godot/imported/slider-tick.svg-3a117e5f9a4792f88b6d7444690d46b8.ctex"
+uid="uid://h46qtjdwywi"
+path="res://.godot/imported/cat_patrol_r.png-3f5fc65efc595dcb11cd51ff5ac081ec.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/slider-tick.svg"
-dest_files=["res://.godot/imported/slider-tick.svg-3a117e5f9a4792f88b6d7444690d46b8.ctex"]
+source_file="res://assets/sprites/cats/cat_patrol_r.png"
+dest_files=["res://.godot/imported/cat_patrol_r.png-3f5fc65efc595dcb11cd51ff5ac081ec.ctex"]
 
 [params]
 
@@ -32,6 +32,3 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
-svg/scale=1.0
-editor/scale_with_editor_scale=false
-editor/convert_colors_with_editor_theme=false
