@@ -92,6 +92,7 @@ position = Vector2(627, 210)
 texture = ExtResource("3_pvrrl")
 
 [node name="MuteButton" parent="Level" instance=ExtResource("7_qn3dd")]
+position = Vector2(1050, 165)
 
 [node name="Player" parent="Level" instance=ExtResource("7_udtg0")]
 position = Vector2(209, 546)

@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://cgxeglm2v7pad"]
 
-[ext_resource type="Texture2D" uid="uid://cyso1lfxpn0k" path="res://assets/sprites/MuteButton1.png" id="1_urxlu"]
+[ext_resource type="Texture2D" uid="uid://cyso1lfxpn0k" path="res://assets/sprites/mute_button_released.png" id="1_urxlu"]
 [ext_resource type="Script" path="res://scenes/main_menu/mute_button.gd" id="2_sedkj"]
 [ext_resource type="AudioStream" uid="uid://byqryh54qat26" path="res://assets/audio/mouse_snap.ogg" id="3_tiapp"]
 
@@ -8,7 +8,6 @@
 size = Vector2(150, 150)
 
 [node name="MuteButton" type="Sprite2D"]
-position = Vector2(1050, 165)
 scale = Vector2(0.62, 0.62)
 texture = ExtResource("1_urxlu")
 script = ExtResource("2_sedkj")

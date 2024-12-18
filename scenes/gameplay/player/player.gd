@@ -1,16 +1,23 @@
 extends CharacterBody2D
 
+const SNAP_PADDING := 10
+const UNSNAP_DISTANCE := 450
+
 @export var speed := 40
 var is_snapped := false
-var last_position
+var last_position: Vector2
 
-func get_input() -> void:
+func _physics_process(_delta: float) -> void:
+	_get_input()
+	move_and_slide()
+
+func _on_too_long_unsnapped_timeout() -> void:
+	$Area2.visible = true
+
+func _get_input() -> void:
 	look_at(get_global_mouse_position())
 	
-	const SNAP_PADDING := 10
-	const UNSNAP_DISTANCE := 450
-	
-	var distance = position.distance_to(get_global_mouse_position())
+	var distance := position.distance_to(get_global_mouse_position())
 	
 	if is_snapped:
 		$Area.visible = false
@@ -35,10 +42,6 @@ func get_input() -> void:
 	
 	last_position = position
 
-func _physics_process(_delta: float) -> void:
-	get_input()
-	move_and_slide()
-
 func get_current_weapon() -> WeaponPick.weapon_types:
 	return $Weapon.current_weapon
 
@@ -48,6 +51,3 @@ func change_weapon(new_weapon) -> WeaponPick.weapon_types:
 	$Tail/Line2D.change_gradient(new_weapon)
 	$Weapon/AnimationPlayer.play("pickup")
 	return old_weapon
-
-func _on_too_long_unsnapped_timeout() -> void:
-	$Area2.visible = true

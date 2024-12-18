@@ -186,6 +186,7 @@ tick_count = 6
 ticks_on_borders = true
 
 [node name="MuteButton" parent="Level" instance=ExtResource("10_ccn5x")]
+position = Vector2(1050, 165)
 
 [node name="Player" parent="Level" instance=ExtResource("14_iiaa6")]
 position = Vector2(209, 546)
