@@ -31,7 +31,7 @@ func load_next_level() -> void:
 		load_game_finished()
 
 #TODO: rename to game over
-func load_menu():
+func load_menu() -> void:
 	curtain.reparent(get_tree().get_root())
 	curtain.play_animation()
 	curtain.finished.connect(curtain.queue_free)
@@ -40,7 +40,7 @@ func load_menu():
 	queue_free()
 
 #TODO: rename to victory
-func load_game_finished():
+func load_game_finished() -> void:
 	curtain.reparent(get_tree().get_root())
 	curtain.play_animation()
 	curtain.finished.connect(curtain.queue_free)

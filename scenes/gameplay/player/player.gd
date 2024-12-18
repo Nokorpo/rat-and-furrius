@@ -1,10 +1,10 @@
 extends CharacterBody2D
 
-@export var speed = 40
+@export var speed := 40
 var is_snapped := false
 var last_position
 
-func get_input():
+func get_input() -> void:
 	look_at(get_global_mouse_position())
 	
 	const SNAP_PADDING := 10
@@ -35,19 +35,19 @@ func get_input():
 	
 	last_position = position
 
-func _physics_process(_delta):
+func _physics_process(_delta: float) -> void:
 	get_input()
 	move_and_slide()
 
 func get_current_weapon() -> WeaponPick.weapon_types:
 	return $Weapon.current_weapon
 
-func change_weapon(new_weapon):
+func change_weapon(new_weapon) -> WeaponPick.weapon_types:
 	var old_weapon = $Weapon.current_weapon
 	$Weapon.current_weapon = new_weapon
 	$Tail/Line2D.change_gradient(new_weapon)
 	$Weapon/AnimationPlayer.play("pickup")
 	return old_weapon
 
-func _on_too_long_unsnapped_timeout():
+func _on_too_long_unsnapped_timeout() -> void:
 	$Area2.visible = true

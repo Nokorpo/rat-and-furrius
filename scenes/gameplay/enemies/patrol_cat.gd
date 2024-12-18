@@ -40,7 +40,7 @@ func _ready() -> void:
 		await get_tree().create_timer(delay_first_pulse).timeout
 		animate_pulse()
 
-func _process(_delta):
+func _process(_delta: float) -> void:
 	if !reduce_vertical_vision or last_position == null or type != CatType.patrol:
 		last_position = %Sprite2D.position
 		return
@@ -49,7 +49,7 @@ func _process(_delta):
 	$PathFollow2D/Vision.scale.x = 0.12 * (1 - abs(direction.y))
 	last_position = %Sprite2D.position
 
-func connect_player_caught(level_manager) -> void:
+func connect_player_caught(level_manager: LevelManager) -> void:
 	if level_manager.has_method("_on_player_caught"):
 		player_caught.connect(level_manager._on_player_caught)
 
@@ -77,7 +77,7 @@ func _on_player_entered_enemy_weak_spot(_player) -> void:
 	await $effects/AnimationPlayer.animation_finished
 	queue_free()
 
-func animate_pulse():
+func animate_pulse() -> void:
 	var tween = create_tween().set_trans(Tween.TRANS_CUBIC).set_ease(Tween.EASE_IN_OUT)
 	var vision = $PathFollow2D/Vision
 	tween.tween_property(vision, "scale", Vector2(size_max, size_max), time_animation)
@@ -89,7 +89,7 @@ func animate_pulse():
 	await get_tree().create_timer(time_off).timeout
 	animate_pulse()
 
-func TEMPORAL_play_killed_sound():
+func TEMPORAL_play_killed_sound() -> void:
 	var audio = %AudioStreamPlayer
 	audio.pitch_scale = randf_range(.9, 1.1)
 	audio.play()

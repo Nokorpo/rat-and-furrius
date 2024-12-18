@@ -22,14 +22,14 @@ var current: float = 0.0:
 			highscore_list.append(value)
 			save_highscores()
 
-func _ready():
+func _ready() -> void:
 	load_highscores()
 
-func save_highscores():
+func save_highscores() -> void:
 	var save_file = FileAccess.open("user://savegame.save", FileAccess.WRITE)
 	save_file.store_var(highscore_list)
 
-func load_highscores():
+func load_highscores() -> void:
 	var save_game = FileAccess.open("user://savegame.save", FileAccess.READ)
 	if save_game:
 		var previous_highscore_list: Array = save_game.get_var()

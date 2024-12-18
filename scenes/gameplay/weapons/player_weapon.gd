@@ -6,5 +6,5 @@ extends Node2D
 		current_weapon = value
 		update_sprite(value)
 
-func update_sprite(weapon_type: WeaponPick.weapon_types):
+func update_sprite(weapon_type: WeaponPick.weapon_types) -> void:
 	$Sprite.texture = load(WeaponPick.WEAPON_SPRITES[weapon_type])

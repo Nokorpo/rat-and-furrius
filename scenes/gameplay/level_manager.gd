@@ -1,4 +1,5 @@
 extends Node2D
+class_name LevelManager
 ## Used inside each level to define level specific signals. Examples:
 ## - Level started
 ## - Level finished
@@ -19,7 +20,7 @@ func _ready() -> void:
 
 ## "Hack" to allow resetting levels without a game manager, for when running
 ## levels on their own via the "Run current scene" button in the editor
-func reload_if_running_from_current_scene():
+func reload_if_running_from_current_scene() -> void:
 	if OS.is_debug_build() and not "game_manager" in get_path().get_concatenated_names():
 		get_tree().reload_current_scene()
 

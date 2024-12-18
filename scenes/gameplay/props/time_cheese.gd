@@ -12,12 +12,12 @@ func _on_player_entered_enemy_weak_spot(_body) -> void:
 	$AnimationPlayer.play("pickup")
 	$AudioStreamPlayer.play()
 
-func play_particle():
+func play_particle() -> void:
 	var particles = pick_particles.instantiate()
 	get_parent().add_child(particles)
 	particles.position = position
 	particles.color = pickup_color
 	particles.emitting = true
 
-func _on_audio_stream_player_finished():
+func _on_audio_stream_player_finished() -> void:
 	queue_free()

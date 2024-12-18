@@ -9,7 +9,7 @@ signal game_over
 @onready var time_low_player = $"../SFXTimeLow"
 @onready var time_up_player = $"../SFXTimeUp"
 @onready var is_time_over: bool = false
-var tween: Tween
+var _tween: Tween
 
 #TODO move animation handling to another node?
 
@@ -43,11 +43,11 @@ func _on_timeout() -> void:
 func add_time(time_to_add: float) -> void:
 	var texture_rect = $"../Control/TextureRect"
 	texture_rect.scale = Vector2(1.3, 1.3)
-	if tween == null:
-		tween = create_tween()
+	if _tween == null:
+		_tween = create_tween()
 	else:
-		tween.kill()
-		tween = create_tween()
+		_tween.kill()
+		_tween = create_tween()
 	
-	tween.tween_property(texture_rect, "scale", Vector2(1, 1), .5)
+	_tween.tween_property(texture_rect, "scale", Vector2(1, 1), .5)
 	start(time_left + time_to_add)

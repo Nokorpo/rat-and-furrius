@@ -1,20 +1,20 @@
 extends RichTextLabel
 
-const SCORES_FORMAT = """Best times:
+const SCORES_FORMAT := """Best times:
 %s
 
 Last Time:
 %s
 """
-const TIME_FORMAT = "%3.2f s\n"
-const CURRENT_TIME_STYLE = "[wave amp=30 freq=2][color=ea7984]%s[/color][/wave]"
+const TIME_FORMAT := "%3.2f s\n"
+const CURRENT_TIME_STYLE := "[wave amp=30 freq=2][color=ea7984]%s[/color][/wave]"
 
-var best_times = [1.2, 2.3, 3.4]
-var current_time = [1.2]
+var best_times := [1.2, 2.3, 3.4]
+var current_time := 1.2
 
 var current_time_position: float
 
-func _ready():
+func _ready() -> void:
 	set_highscores()
 	text = format_scores()
 

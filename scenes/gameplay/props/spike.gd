@@ -2,7 +2,7 @@ extends Area2D
 
 signal player_caught
 
-func connect_player_caught(level_manager) -> void:
+func connect_player_caught(level_manager: LevelManager) -> void:
 	player_caught.connect(level_manager._on_player_caught)
 
 func _on_body_entered(body: Node2D) -> void:
