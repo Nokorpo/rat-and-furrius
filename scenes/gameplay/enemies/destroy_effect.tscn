@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://coidy6fgutbu1"]
 
-[ext_resource type="Texture2D" uid="uid://bhtkhdap6lhe" path="res://assets/sprites/slice_fx.svg" id="1_3g4ag"]
-[ext_resource type="Texture2D" uid="uid://r28s42mguoxy" path="res://assets/sprites/circle.svg" id="2_ppbt7"]
+[ext_resource type="Texture2D" uid="uid://bhtkhdap6lhe" path="res://assets/sprites/slice_fx.svg" id="1_edf4m"]
+[ext_resource type="Texture2D" uid="uid://r28s42mguoxy" path="res://assets/sprites/circle.svg" id="2_makws"]
 
 [sub_resource type="Animation" id="Animation_mfcbw"]
 length = 0.001
@@ -208,18 +208,19 @@ _data = {
 "attack": SubResource("Animation_wnoy6")
 }
 
-[node name="effects" type="Node2D"]
+[node name="DestroyEffect" type="Node2D"]
+editor_description = "VFX that plays when player destroys something"
 visible = false
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(200, 0)
 scale = Vector2(1e-05, 1e-05)
-texture = ExtResource("1_3g4ag")
+texture = ExtResource("1_edf4m")
 
 [node name="Sprite2D2" type="Sprite2D" parent="."]
 position = Vector2(150, 0)
 scale = Vector2(3, 1)
-texture = ExtResource("2_ppbt7")
+texture = ExtResource("2_makws")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {

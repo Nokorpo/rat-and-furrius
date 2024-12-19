@@ -1,5 +1,6 @@
 @tool
 extends Node2D
+## The weapon that player is holding
 
 @export var current_weapon := WeaponPick.weapon_types.red:
 	set(value):

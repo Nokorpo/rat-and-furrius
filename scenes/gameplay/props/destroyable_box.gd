@@ -1,4 +1,5 @@
 extends Node2D
+## A box that can be destroyed
 
 signal box_destroyed
 

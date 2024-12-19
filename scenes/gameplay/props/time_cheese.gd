@@ -1,5 +1,5 @@
 extends Sprite2D
-# Used in levels to increase the time the player has left
+## Used in levels to increase the time the player has left
 
 @export var time_to_add: float = 1
 @export var pickup_color := Color.WHITE

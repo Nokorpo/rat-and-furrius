@@ -1,6 +1,7 @@
 extends Line2D
+## Visual effect of the player tail trail
 
-@export var length = 50
+@export var length: int = 50
 @export var gradient_red: Gradient
 @export var gradient_green: Gradient
 @export var gradient_blue: Gradient

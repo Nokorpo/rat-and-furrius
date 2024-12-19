@@ -9,7 +9,7 @@
 [ext_resource type="Script" path="res://scenes/gameplay/enemies/enemy_weak_spot.gd" id="6_ettpo"]
 [ext_resource type="AudioStream" uid="uid://dqkhj7shfw01c" path="res://assets/audio/sound_sword_slash.ogg" id="6_tej0a"]
 [ext_resource type="Texture2D" uid="uid://7jxqgi0dt4ko" path="res://assets/sprites/circle_vision.svg" id="8_g78wn"]
-[ext_resource type="PackedScene" uid="uid://coidy6fgutbu1" path="res://scenes/gameplay/enemies/destroy_effects.tscn" id="10_y0rmr"]
+[ext_resource type="PackedScene" uid="uid://coidy6fgutbu1" path="res://scenes/gameplay/enemies/destroy_effect.tscn" id="10_y0rmr"]
 
 [sub_resource type="Curve2D" id="Curve2D_030nq"]
 

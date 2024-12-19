@@ -1,4 +1,5 @@
 extends Area2D
+## Spike that damages the player
 
 signal player_caught
 

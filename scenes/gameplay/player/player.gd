@@ -1,4 +1,5 @@
 extends CharacterBody2D
+## Player character controller
 
 const SNAP_PADDING := 10
 const UNSNAP_DISTANCE := 450

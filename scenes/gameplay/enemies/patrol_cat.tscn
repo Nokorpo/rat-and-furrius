@@ -7,7 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://cuh6mt1bdnkhw" path="res://assets/sprites/cone_vision.svg" id="4_wa5gq"]
 [ext_resource type="Script" path="res://scenes/gameplay/enemies/cat_sprite.gd" id="6_jj2yl"]
 [ext_resource type="AudioStream" uid="uid://dqkhj7shfw01c" path="res://assets/audio/sound_sword_slash.ogg" id="6_u8v1c"]
-[ext_resource type="PackedScene" uid="uid://coidy6fgutbu1" path="res://scenes/gameplay/enemies/destroy_effects.tscn" id="7_wj0vg"]
+[ext_resource type="PackedScene" uid="uid://coidy6fgutbu1" path="res://scenes/gameplay/enemies/destroy_effect.tscn" id="7_wj0vg"]
 [ext_resource type="Texture2D" uid="uid://oa6fug33uyv4" path="res://assets/sprites/cats/cat_patrol_g.png" id="8_fbhgn"]
 [ext_resource type="Texture2D" uid="uid://bmof722angcsm" path="res://assets/sprites/cats/cat_patrol_b.png" id="9_6nxu5"]
 
