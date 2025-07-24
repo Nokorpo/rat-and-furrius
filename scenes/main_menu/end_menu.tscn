@@ -65,9 +65,9 @@ level_list = ExtResource("2_i8i84")
 [node name="CPUParticles2D" type="CPUParticles2D" parent="."]
 position = Vector2(640, 360)
 amount = 24
+texture = ExtResource("1_84ixt")
 lifetime = 8.0
 preprocess = 2.0
-texture = ExtResource("1_84ixt")
 emission_shape = 3
 emission_rect_extents = Vector2(540, 300)
 gravity = Vector2(0, 0)
@@ -122,7 +122,7 @@ vertical_alignment = 1
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Label"]
 libraries = {
-"": SubResource("AnimationLibrary_4evw7")
+&"": SubResource("AnimationLibrary_4evw7")
 }
 autoplay = "idle"
 

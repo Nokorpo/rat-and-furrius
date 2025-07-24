@@ -24,6 +24,11 @@ func reload_if_running_from_current_scene() -> void:
 	if OS.is_debug_build() and not "game_manager" in get_path().get_concatenated_names():
 		get_tree().reload_current_scene()
 
+func add_cheeses(cheeses: Node) -> void:
+	dont_destroy_on_death.queue_free()
+	dont_destroy_on_death = cheeses
+	cheeses.reparent(self)
+
 func _on_player_caught() -> void:
 	reload_if_running_from_current_scene()
 	restart_level.emit(dont_destroy_on_death)
@@ -32,8 +37,3 @@ func _on_cat_died() -> void:
 	cats_on_level -= 1
 	if cats_on_level == 0:
 		level_finished.emit()
-
-func add_cheeses(cheeses: Node) -> void:
-	dont_destroy_on_death.queue_free()
-	dont_destroy_on_death = cheeses
-	cheeses.reparent(self)

@@ -27,3 +27,4 @@ one_shot = true
 [connection signal="button_pressed" from="." to="ButtonCooldown" method="start"]
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="timeout" from="ButtonCooldown" to="." method="reset_button"]
+[connection signal="timeout" from="ButtonCooldown" to="." method="_on_button_cooldown_timeout"]

@@ -30,20 +30,7 @@ const WEAPON_PITCH := {
 		update_sprite(value)
 @export var pickup_cooldown_time := 1.
 
-var pick_particles = preload("res://scenes/gameplay/weapons/weapon_pick_particle.tscn")
-
-func _on_area_2d_body_entered(body: Node) -> void:
-	if body.is_in_group("player"):
-		pickup_cooldown()
-		var player_weapon = body.change_weapon(current_weapon)
-		var particles = pick_particles.instantiate()
-		add_child(particles)
-		particles.color = Color(WEAPON_COLORS[current_weapon])
-		particles.emitting = true
-		current_weapon = player_weapon
-		$AnimationPlayer.play("pickup")
-		$AnimationPlayer.seek(0)
-		$AudioStreamPlayer.play()
+var _pick_particles = preload("res://scenes/gameplay/weapons/weapon_pick_particle.tscn")
 
 func pickup_cooldown() -> void:
 	$Area2D.set_deferred("monitoring", false)
@@ -53,3 +40,16 @@ func pickup_cooldown() -> void:
 
 func update_sprite(weapon_type: weapon_types) -> void:
 	$Sprite.texture = load(WEAPON_SPRITES[weapon_type])
+
+func _on_area_2d_body_entered(body: Node) -> void:
+	if body.is_in_group("player"):
+		pickup_cooldown()
+		var player_weapon = body.change_weapon(current_weapon)
+		var particles = _pick_particles.instantiate()
+		add_child(particles)
+		particles.color = Color(WEAPON_COLORS[current_weapon])
+		particles.emitting = true
+		current_weapon = player_weapon
+		$AnimationPlayer.play("pickup")
+		$AnimationPlayer.seek(0)
+		$AudioStreamPlayer.play()

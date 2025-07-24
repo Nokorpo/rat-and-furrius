@@ -29,8 +29,8 @@ enum CatType { sleepy, patrol }
 ## Time trhat the pulse stays on
 @export var time_on := 1.0
 
-var enabled: bool = true
-var last_position
+var _enabled: bool = true
+var _last_position
 
 func _ready() -> void:
 	%Sprite2D.set_sprite(weakness)
@@ -38,16 +38,20 @@ func _ready() -> void:
 	if type == CatType.sleepy:
 		$PathFollow2D/Vision.scale = Vector2(0, 0)
 		await get_tree().create_timer(delay_first_pulse).timeout
-		animate_pulse()
+		_animate_pulse()
 
 func _process(_delta: float) -> void:
-	if !reduce_vertical_vision or last_position == null or type != CatType.patrol:
-		last_position = %Sprite2D.position
+	if !reduce_vertical_vision or _last_position == null or type != CatType.patrol:
+		_last_position = %Sprite2D.position
 		return
-	var velocity = %Sprite2D.position - last_position
+	var velocity = %Sprite2D.position - _last_position
 	var direction = velocity.normalized()
 	$PathFollow2D/Vision.scale.x = 0.12 * (1 - abs(direction.y))
-	last_position = %Sprite2D.position
+	_last_position = %Sprite2D.position
+
+func _physics_process(delta: float) -> void:
+	if _enabled:
+		$PathFollow2D.progress += speed * delta
 
 func connect_player_caught(level_manager: LevelManager) -> void:
 	if level_manager.has_method("_on_player_caught"):
@@ -58,26 +62,22 @@ func connect_cat_counter(level_manager) -> void:
 		level_manager.cats_on_level += 1
 		cat_died.connect(level_manager._on_cat_died)
 
-func _physics_process(delta: float) -> void:
-	if enabled:
-		$PathFollow2D.progress += speed * delta
-
 func _on_player_entered_enemy_vision() -> void:
 	player_caught.emit()
 
 func _on_player_entered_enemy_weak_spot(_player) -> void:
-	enabled = false
+	_enabled = false
 	$PathFollow2D/Vision/Area2D.monitoring = false
 	%WeakSpot.set_deferred("monitoring", false)
-	TEMPORAL_play_killed_sound()
+	_play_killed_sound()
 	cat_died.emit()
-	$effects.position = $PathFollow2D/Vision.position
-	$effects.look_at(get_global_mouse_position())
-	$effects/AnimationPlayer.play("attack")
-	await $effects/AnimationPlayer.animation_finished
+	$DestroyEffect.position = $PathFollow2D/Vision.position
+	$DestroyEffect.look_at(get_global_mouse_position())
+	$DestroyEffect/AnimationPlayer.play("attack")
+	await $DestroyEffect/AnimationPlayer.animation_finished
 	queue_free()
 
-func animate_pulse() -> void:
+func _animate_pulse() -> void:
 	var tween = create_tween().set_trans(Tween.TRANS_CUBIC).set_ease(Tween.EASE_IN_OUT)
 	var vision = $PathFollow2D/Vision
 	tween.tween_property(vision, "scale", Vector2(size_max, size_max), time_animation)
@@ -87,9 +87,9 @@ func animate_pulse() -> void:
 	tween.tween_property(vision, "scale", Vector2(0, 0), time_animation)
 	await tween.finished
 	await get_tree().create_timer(time_off).timeout
-	animate_pulse()
+	_animate_pulse()
 
-func TEMPORAL_play_killed_sound() -> void:
+func _play_killed_sound() -> void:
 	var audio = %AudioStreamPlayer
 	audio.pitch_scale = randf_range(.9, 1.1)
 	audio.play()

@@ -21,7 +21,10 @@ func _on_area_2d_body_entered(body: Node2D) -> void:
 		_area.set_deferred("monitoring", false)
 		button_pressed.emit()
 
-func reset_button() -> void:
+func _on_button_cooldown_timeout() -> void:
+	_reset_button()
+
+func _reset_button() -> void:
 	_area.monitoring = true
 	_update_texture()
 

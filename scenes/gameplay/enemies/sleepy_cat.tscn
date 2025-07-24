@@ -1,6 +1,6 @@
 [gd_scene load_steps=14 format=3 uid="uid://bd1gi8jk1bb2o"]
 
-[ext_resource type="Script" uid="uid://di2e8k6xq860w" path="res://scenes/gameplay/enemies/patrol_cat.gd" id="1_mb5vl"]
+[ext_resource type="Script" uid="uid://di2e8k6xq860w" path="res://scenes/gameplay/enemies/cat.gd" id="1_mb5vl"]
 [ext_resource type="Texture2D" uid="uid://bqg0whd6da1jy" path="res://assets/sprites/cats/cat_sleepy_b.png" id="2_63mxm"]
 [ext_resource type="Script" uid="uid://cxeuwypnx3xtq" path="res://scenes/gameplay/enemies/cat_sprite.gd" id="3_cv1dy"]
 [ext_resource type="Texture2D" uid="uid://sg7ejjrowlyy" path="res://assets/sprites/cats/cat_sleepy_r.png" id="4_ngdde"]
@@ -38,7 +38,7 @@ sprite_blue = ExtResource("2_63mxm")
 unique_name_in_owner = true
 stream = ExtResource("6_tej0a")
 
-[node name="effects" parent="." instance=ExtResource("10_y0rmr")]
+[node name="DestroyEffect" parent="." instance=ExtResource("10_y0rmr")]
 
 [node name="PathFollow2D" type="PathFollow2D" parent="."]
 

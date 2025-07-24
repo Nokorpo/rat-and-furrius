@@ -15,15 +15,15 @@ var current_time := 1.2
 var current_time_position: float
 
 func _ready() -> void:
-	set_highscores()
-	text = format_scores()
+	_set_highscores()
+	text = _format_scores()
 
-func set_highscores() -> void:
+func _set_highscores() -> void:
 	best_times = HighscoreHolder.highscore_list
 	current_time = HighscoreHolder.current
 	current_time_position = HighscoreHolder.current_position
 
-func format_scores() -> String:
+func _format_scores() -> String:
 	var best_times_text = ""
 	for i in range(len(best_times)):
 		var score = (TIME_FORMAT % best_times[i]).replace(".", " . ")

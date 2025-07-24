@@ -8,13 +8,13 @@ var last_time: float
 func _ready() -> void:
 	$AudioStreamPlayer.play()
 
-func start_game() -> void:
+func count_destroyed_box() -> void:
+	boxes_to_destroy_for_game_start -= 1
+	if boxes_to_destroy_for_game_start <= 0:
+		_start_game()
+
+func _start_game() -> void:
 	var game_manager = game.instantiate()
 	game_manager.levels = level_list.levels
 	get_tree().root.add_child(game_manager)
 	queue_free()
-
-func count_destroyed_box() -> void:
-	boxes_to_destroy_for_game_start -= 1
-	if boxes_to_destroy_for_game_start <= 0:
-		start_game()

@@ -8,13 +8,13 @@ signal button_pressed
 @onready var _audio: AudioStreamPlayer = $AudioStreamPlayer
 @onready var _area: Area2D = $Area2D
 
+func reset_button() -> void:
+	_area.monitoring = true
+	texture = _released_texture
+
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	if body.is_in_group("player"):
 		_audio.play()
 		texture = _pressed_texture
 		_area.set_deferred("monitoring", false)
 		button_pressed.emit()
-
-func reset_button() -> void:
-	_area.monitoring = true
-	texture = _released_texture

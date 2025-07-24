@@ -224,5 +224,5 @@ texture = ExtResource("2_makws")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_63fjc")
+&"": SubResource("AnimationLibrary_63fjc")
 }

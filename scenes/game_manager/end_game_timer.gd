@@ -31,15 +31,6 @@ func _process(_delta: float) -> void:
 		animation_player.play("RESET", 5)
 		time_low_player.stop()
 
-func _on_timeout() -> void:
-	%TimerValue.text = "0.0 s"
-	is_time_over = true
-	animation_player.play("time_up")
-	time_low_player.stop()
-	time_up_player.play()
-	await animation_player.animation_finished
-	game_over.emit()
-
 func add_time(time_to_add: float) -> void:
 	var texture_rect = $"../Control/TextureRect"
 	texture_rect.scale = Vector2(1.3, 1.3)
@@ -51,3 +42,12 @@ func add_time(time_to_add: float) -> void:
 	
 	_tween.tween_property(texture_rect, "scale", Vector2(1, 1), .5)
 	start(time_left + time_to_add)
+
+func _on_timeout() -> void:
+	%TimerValue.text = "0.0 s"
+	is_time_over = true
+	animation_player.play("time_up")
+	time_low_player.stop()
+	time_up_player.play()
+	await animation_player.animation_finished
+	game_over.emit()

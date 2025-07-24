@@ -7,7 +7,15 @@ signal player_used_wrong_color_to_attack
 
 var weakness: Cat.Weakness
 
-func is_weak_against(value: Cat.Weakness) -> bool:
+func _on_area_2d_body_entered(body: Node2D) -> void:
+	if body.is_in_group("player"):
+		if body.has_method("get_current_weapon"):
+			if _is_weak_against(body.get_current_weapon()):
+				player_entered_enemy_weak_spot.emit(body)
+			else:
+				player_used_wrong_color_to_attack.emit()
+
+func _is_weak_against(value: Cat.Weakness) -> bool:
 	if value == WeaponPick.weapon_types.red and weakness == Cat.Weakness.red:
 		return true
 	if value == WeaponPick.weapon_types.green and weakness == Cat.Weakness.green:
@@ -18,11 +26,3 @@ func is_weak_against(value: Cat.Weakness) -> bool:
 		return true
 	else:
 		return false
-
-func _on_area_2d_body_entered(body: Node2D) -> void:
-	if body.is_in_group("player"):
-		if body.has_method("get_current_weapon"):
-			if is_weak_against(body.get_current_weapon()):
-				player_entered_enemy_weak_spot.emit(body)
-			else:
-				player_used_wrong_color_to_attack.emit()
