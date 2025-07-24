@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://ccn4q36ow8uji"]
 
-[ext_resource type="Script" path="res://scenes/gameplay/weapons/weapon_pick.gd" id="1_2vjsw"]
+[ext_resource type="Script" uid="uid://c5ty543winuj0" path="res://scenes/gameplay/weapons/weapon_pick.gd" id="1_2vjsw"]
 [ext_resource type="Texture2D" uid="uid://dlqmc4yj2qhr" path="res://assets/sprites/sword_r.png" id="2_d15tf"]
 [ext_resource type="AudioStream" uid="uid://dxhw3d42rvj6d" path="res://assets/audio/sword_pickup.mp3" id="3_5brkn"]
 
@@ -103,9 +103,9 @@ tracks/2/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_elvlr"]
 _data = {
-"RESET": SubResource("Animation_jwsgs"),
-"idle": SubResource("Animation_uhdcy"),
-"pickup": SubResource("Animation_rwsm7")
+&"RESET": SubResource("Animation_jwsgs"),
+&"idle": SubResource("Animation_uhdcy"),
+&"pickup": SubResource("Animation_rwsm7")
 }
 
 [node name="WeaponPick" type="Node2D"]

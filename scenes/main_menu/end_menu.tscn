@@ -1,9 +1,9 @@
 [gd_scene load_steps=17 format=4 uid="uid://bfi3nsvqsr1p4"]
 
 [ext_resource type="Texture2D" uid="uid://1rkh0k12n2ls" path="res://assets/sprites/heart-icon.svg" id="1_84ixt"]
-[ext_resource type="Script" path="res://scenes/main_menu/start_menu.gd" id="1_wyadd"]
+[ext_resource type="Script" uid="uid://c6hedbops6c3h" path="res://scenes/main_menu/start_menu.gd" id="1_wyadd"]
 [ext_resource type="Resource" uid="uid://cw2b5wscfcxs7" path="res://scenes/main_menu/level_list.tres" id="2_i8i84"]
-[ext_resource type="Script" path="res://scenes/main_menu/score_view.gd" id="5_bcopx"]
+[ext_resource type="Script" uid="uid://cx6lynuvnxo11" path="res://scenes/main_menu/score_view.gd" id="5_bcopx"]
 [ext_resource type="PackedScene" uid="uid://cgxeglm2v7pad" path="res://scenes/main_menu/mute_button.tscn" id="10_ccn5x"]
 [ext_resource type="TileSet" uid="uid://dqh1gof6cuk5l" path="res://assets/tilemap.tres" id="10_d3cgq"]
 [ext_resource type="FontFile" uid="uid://xgehwx784gtw" path="res://assets/permanent-marker-regular.ttf" id="11_3jq6u"]
@@ -54,8 +54,8 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_4evw7"]
 _data = {
-"RESET": SubResource("Animation_ppxtf"),
-"idle": SubResource("Animation_7bw7j")
+&"RESET": SubResource("Animation_ppxtf"),
+&"idle": SubResource("Animation_7bw7j")
 }
 
 [node name="end_menu" type="Node2D"]

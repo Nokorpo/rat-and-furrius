@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://wfkhsf2olb1h"]
 
 [ext_resource type="Texture2D" uid="uid://cwii6qut11khp" path="res://assets/sprites/spikes.png" id="1_g6lyt"]
-[ext_resource type="Script" path="res://scenes/gameplay/props/spike.gd" id="2_b8n07"]
+[ext_resource type="Script" uid="uid://xrhrjdtcdcy2" path="res://scenes/gameplay/props/spike.gd" id="2_b8n07"]
 
 [node name="Spike" type="Sprite2D"]
 texture = ExtResource("1_g6lyt")

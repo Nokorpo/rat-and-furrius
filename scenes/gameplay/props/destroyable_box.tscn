@@ -1,8 +1,8 @@
 [gd_scene load_steps=10 format=3 uid="uid://bpdqagyo7yown"]
 
-[ext_resource type="Script" path="res://scenes/gameplay/props/destroyable_box.gd" id="1_bmu5q"]
+[ext_resource type="Script" uid="uid://kybog6ppx5hj" path="res://scenes/gameplay/props/destroyable_box.gd" id="1_bmu5q"]
 [ext_resource type="Texture2D" uid="uid://f1kbpqa4yl53" path="res://assets/sprites/box.png" id="1_f0gpv"]
-[ext_resource type="Script" path="res://scenes/gameplay/enemies/enemy_weak_spot.gd" id="3_je6cw"]
+[ext_resource type="Script" uid="uid://bfydso35cyv2u" path="res://scenes/gameplay/enemies/enemy_weak_spot.gd" id="3_je6cw"]
 [ext_resource type="AudioStream" uid="uid://spkc5vsnopx7" path="res://assets/audio/sword_slash_crate.ogg" id="4_m3n7q"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tf4nk"]
@@ -128,9 +128,9 @@ tracks/3/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_tm7u7"]
 _data = {
-"RESET": SubResource("Animation_5a0op"),
-"idle": SubResource("Animation_e6yad"),
-"pickup": SubResource("Animation_2oq4l")
+&"RESET": SubResource("Animation_5a0op"),
+&"idle": SubResource("Animation_e6yad"),
+&"pickup": SubResource("Animation_2oq4l")
 }
 
 [node name="DestroyableBox" type="Node2D"]

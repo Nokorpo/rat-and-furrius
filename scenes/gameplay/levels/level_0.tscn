@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=4 uid="uid://bcnimij4eaggj"]
 
 [ext_resource type="PackedScene" uid="uid://bijr1niobi180" path="res://scenes/gameplay/player/player.tscn" id="1_b3dob"]
-[ext_resource type="Script" path="res://scenes/gameplay/level_manager.gd" id="1_fgpct"]
+[ext_resource type="Script" uid="uid://vxphbyy6mfg6" path="res://scenes/gameplay/level_manager.gd" id="1_fgpct"]
 [ext_resource type="TileSet" uid="uid://dqh1gof6cuk5l" path="res://assets/tilemap.tres" id="4_p00u3"]
 [ext_resource type="PackedScene" uid="uid://b80k0bgl3c61d" path="res://scenes/gameplay/enemies/patrol_cat.tscn" id="7_l6135"]
 [ext_resource type="PackedScene" uid="uid://bpdqagyo7yown" path="res://scenes/gameplay/props/destroyable_box.tscn" id="8_fxd1v"]

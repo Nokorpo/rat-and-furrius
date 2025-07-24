@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=3 uid="uid://civfs86jhk8a2"]
 
 [ext_resource type="Texture2D" uid="uid://dkcvyxgemb5eo" path="res://assets/sprites/square.svg" id="1_4dqxa"]
-[ext_resource type="Script" path="res://scenes/gameplay/props/door.gd" id="1_m2k8k"]
+[ext_resource type="Script" uid="uid://ci6uc0d6kkel4" path="res://scenes/gameplay/props/door.gd" id="1_m2k8k"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_asw6l"]
 size = Vector2(64, 64)
@@ -146,11 +146,11 @@ tracks/1/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_crob5"]
 _data = {
-"RESET": SubResource("Animation_5a5wn"),
-"slide_left": SubResource("Animation_mqsiy"),
-"slide_left_close": SubResource("Animation_bmipy"),
-"slide_right": SubResource("Animation_x6jg8"),
-"slide_right_close": SubResource("Animation_srj5q")
+&"RESET": SubResource("Animation_5a5wn"),
+&"slide_left": SubResource("Animation_mqsiy"),
+&"slide_left_close": SubResource("Animation_bmipy"),
+&"slide_right": SubResource("Animation_x6jg8"),
+&"slide_right_close": SubResource("Animation_srj5q")
 }
 
 [node name="Door" type="Node2D"]

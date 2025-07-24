@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://fhjfqvplm68o"]
 
 [ext_resource type="Texture2D" uid="uid://r28s42mguoxy" path="res://assets/sprites/circle.svg" id="1_jpnji"]
-[ext_resource type="Script" path="res://scenes/gameplay/weapons/destroy_self_timer.gd" id="2_aww30"]
+[ext_resource type="Script" uid="uid://cxn1oot05wyh8" path="res://scenes/gameplay/weapons/destroy_self_timer.gd" id="2_aww30"]
 
 [sub_resource type="Curve" id="Curve_r2oll"]
 _data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]

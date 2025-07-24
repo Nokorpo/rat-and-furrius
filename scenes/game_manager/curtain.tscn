@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://dv3kfiw88cwed"]
 
-[ext_resource type="Script" path="res://scenes/game_manager/curtain.gd" id="1_ff3co"]
+[ext_resource type="Script" uid="uid://dd1qh8t7lv3fv" path="res://scenes/game_manager/curtain.gd" id="1_ff3co"]
 [ext_resource type="Texture2D" uid="uid://jkoe6kpu0mvb" path="res://assets/sprites/cortinilla.svg" id="2_ulcys"]
 
 [sub_resource type="Animation" id="Animation_crke4"]
@@ -74,8 +74,8 @@ tracks/2/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_x7p3u"]
 _data = {
-"RESET": SubResource("Animation_crke4"),
-"next_level": SubResource("Animation_myt1x")
+&"RESET": SubResource("Animation_crke4"),
+&"next_level": SubResource("Animation_myt1x")
 }
 
 [node name="Curtain" type="Control"]

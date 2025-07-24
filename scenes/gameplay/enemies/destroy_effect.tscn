@@ -204,8 +204,8 @@ tracks/7/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_63fjc"]
 _data = {
-"RESET": SubResource("Animation_mfcbw"),
-"attack": SubResource("Animation_wnoy6")
+&"RESET": SubResource("Animation_mfcbw"),
+&"attack": SubResource("Animation_wnoy6")
 }
 
 [node name="DestroyEffect" type="Node2D"]

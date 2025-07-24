@@ -49,8 +49,8 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_gp1mo"]
 _data = {
-"RESET": SubResource("Animation_i5gta"),
-"glow": SubResource("Animation_devuv")
+&"RESET": SubResource("Animation_i5gta"),
+&"glow": SubResource("Animation_devuv")
 }
 
 [node name="Goal" type="Sprite2D"]

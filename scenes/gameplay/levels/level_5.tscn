@@ -1,6 +1,6 @@
 [gd_scene load_steps=14 format=4 uid="uid://dhu7vaos6i02j"]
 
-[ext_resource type="Script" path="res://scenes/gameplay/level_manager.gd" id="1_exv4j"]
+[ext_resource type="Script" uid="uid://vxphbyy6mfg6" path="res://scenes/gameplay/level_manager.gd" id="1_exv4j"]
 [ext_resource type="PackedScene" uid="uid://bijr1niobi180" path="res://scenes/gameplay/player/player.tscn" id="2_tiww8"]
 [ext_resource type="PackedScene" uid="uid://ccn4q36ow8uji" path="res://scenes/gameplay/weapons/weapon_pick.tscn" id="4_pml3d"]
 [ext_resource type="PackedScene" uid="uid://bxanlhtgoexvp" path="res://scenes/gameplay/props/time_cheese.tscn" id="5_rvxov"]

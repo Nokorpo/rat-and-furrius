@@ -1,6 +1,6 @@
 [gd_scene load_steps=11 format=4 uid="uid://dcfso3c8lfrxx"]
 
-[ext_resource type="Script" path="res://scenes/gameplay/level_manager.gd" id="1_thrut"]
+[ext_resource type="Script" uid="uid://vxphbyy6mfg6" path="res://scenes/gameplay/level_manager.gd" id="1_thrut"]
 [ext_resource type="PackedScene" uid="uid://bijr1niobi180" path="res://scenes/gameplay/player/player.tscn" id="2_pkk2i"]
 [ext_resource type="PackedScene" uid="uid://ccn4q36ow8uji" path="res://scenes/gameplay/weapons/weapon_pick.tscn" id="4_h63r5"]
 [ext_resource type="PackedScene" uid="uid://bd1gi8jk1bb2o" path="res://scenes/gameplay/enemies/sleepy_cat.tscn" id="5_06p2h"]

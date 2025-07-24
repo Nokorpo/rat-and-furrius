@@ -1,8 +1,8 @@
 [gd_scene load_steps=10 format=3 uid="uid://bxanlhtgoexvp"]
 
 [ext_resource type="Texture2D" uid="uid://vklv1acxd3xl" path="res://assets/sprites/cheese.png" id="1_70x7b"]
-[ext_resource type="Script" path="res://scenes/gameplay/props/time_cheese.gd" id="2_1eolw"]
-[ext_resource type="Script" path="res://scenes/gameplay/enemies/enemy_weak_spot.gd" id="2_kr71m"]
+[ext_resource type="Script" uid="uid://cyc5wr1tfy3y8" path="res://scenes/gameplay/props/time_cheese.gd" id="2_1eolw"]
+[ext_resource type="Script" uid="uid://bfydso35cyv2u" path="res://scenes/gameplay/enemies/enemy_weak_spot.gd" id="2_kr71m"]
 [ext_resource type="AudioStream" uid="uid://nm6kr6l5ek7h" path="res://assets/audio/sword_slash_cheese.ogg" id="4_gvcl6"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_d6lpd"]
@@ -128,9 +128,9 @@ tracks/3/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_tm7u7"]
 _data = {
-"RESET": SubResource("Animation_5a0op"),
-"idle": SubResource("Animation_e6yad"),
-"pickup": SubResource("Animation_2oq4l")
+&"RESET": SubResource("Animation_5a0op"),
+&"idle": SubResource("Animation_e6yad"),
+&"pickup": SubResource("Animation_2oq4l")
 }
 
 [node name="TimeCheese" type="Sprite2D"]

@@ -1,6 +1,6 @@
 [gd_scene load_steps=13 format=4 uid="uid://bjipjl8dxe7mo"]
 
-[ext_resource type="Script" path="res://scenes/main_menu/start_menu.gd" id="1_cqxbd"]
+[ext_resource type="Script" uid="uid://c6hedbops6c3h" path="res://scenes/main_menu/start_menu.gd" id="1_cqxbd"]
 [ext_resource type="Resource" uid="uid://cw2b5wscfcxs7" path="res://scenes/main_menu/level_list.tres" id="2_srgjd"]
 [ext_resource type="Texture2D" uid="uid://bal8b8120hp3c" path="res://assets/sprites/rat-and-furious-logo.svg" id="3_pvrrl"]
 [ext_resource type="PackedScene" uid="uid://bpdqagyo7yown" path="res://scenes/gameplay/props/destroyable_box.tscn" id="6_m52jg"]
@@ -44,8 +44,8 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_4evw7"]
 _data = {
-"RESET": SubResource("Animation_ppxtf"),
-"idle": SubResource("Animation_7bw7j")
+&"RESET": SubResource("Animation_ppxtf"),
+&"idle": SubResource("Animation_7bw7j")
 }
 
 [node name="start_menu" type="Node2D"]
@@ -82,7 +82,7 @@ vertical_alignment = 1
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Level/Label"]
 libraries = {
-"": SubResource("AnimationLibrary_4evw7")
+&"": SubResource("AnimationLibrary_4evw7")
 }
 autoplay = "idle"
 

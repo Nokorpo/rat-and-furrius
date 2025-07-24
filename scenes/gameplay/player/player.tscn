@@ -1,11 +1,11 @@
 [gd_scene load_steps=22 format=3 uid="uid://bijr1niobi180"]
 
-[ext_resource type="Script" path="res://scenes/gameplay/player/player.gd" id="1_qe601"]
-[ext_resource type="Script" path="res://scenes/gameplay/weapons/player_weapon.gd" id="2_2fm5i"]
+[ext_resource type="Script" uid="uid://7p5vpm3h7ttf" path="res://scenes/gameplay/player/player.gd" id="1_qe601"]
+[ext_resource type="Script" uid="uid://ed371kjj4qii" path="res://scenes/gameplay/weapons/player_weapon.gd" id="2_2fm5i"]
 [ext_resource type="Texture2D" uid="uid://r28s42mguoxy" path="res://assets/sprites/circle.svg" id="2_nw4bl"]
 [ext_resource type="Texture2D" uid="uid://dop8nj5r7a62f" path="res://assets/sprites/mouse_sprite.png" id="2_u4q6q"]
 [ext_resource type="Texture2D" uid="uid://dlqmc4yj2qhr" path="res://assets/sprites/sword_r.png" id="2_xlbxk"]
-[ext_resource type="Script" path="res://scenes/gameplay/player/player_tail.gd" id="4_ci5k6"]
+[ext_resource type="Script" uid="uid://du8fewvv2xdoo" path="res://scenes/gameplay/player/player_tail.gd" id="4_ci5k6"]
 [ext_resource type="Texture2D" uid="uid://c03emcqmmx00a" path="res://assets/sprites/circle-mouse.svg" id="6_r2rqk"]
 [ext_resource type="AudioStream" uid="uid://byqryh54qat26" path="res://assets/audio/mouse_snap.ogg" id="7_lsi4b"]
 
@@ -40,7 +40,7 @@ tracks/1/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_ml4ny"]
 _data = {
-"pickup": SubResource("Animation_yl3nl")
+&"pickup": SubResource("Animation_yl3nl")
 }
 
 [sub_resource type="Curve" id="Curve_u3kns"]
@@ -113,8 +113,8 @@ tracks/1/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_w7ynk"]
 _data = {
-"RESET": SubResource("Animation_cqnvl"),
-"idle": SubResource("Animation_bdmye")
+&"RESET": SubResource("Animation_cqnvl"),
+&"idle": SubResource("Animation_bdmye")
 }
 
 [sub_resource type="Animation" id="Animation_cddq6"]
@@ -151,8 +151,8 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_w43h6"]
 _data = {
-"RESET": SubResource("Animation_cddq6"),
-"idle": SubResource("Animation_yipce")
+&"RESET": SubResource("Animation_cddq6"),
+&"idle": SubResource("Animation_yipce")
 }
 
 [node name="Player" type="CharacterBody2D" groups=["player"]]
@@ -172,7 +172,7 @@ offset = Vector2(0, 50)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Weapon"]
 libraries = {
-"": SubResource("AnimationLibrary_ml4ny")
+&"": SubResource("AnimationLibrary_ml4ny")
 }
 
 [node name="Tail" type="Node2D" parent="."]
@@ -201,7 +201,7 @@ texture = ExtResource("2_nw4bl")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Area2"]
 libraries = {
-"": SubResource("AnimationLibrary_w7ynk")
+&"": SubResource("AnimationLibrary_w7ynk")
 }
 autoplay = "idle"
 
@@ -217,7 +217,7 @@ texture = ExtResource("6_r2rqk")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Area"]
 libraries = {
-"": SubResource("AnimationLibrary_w43h6")
+&"": SubResource("AnimationLibrary_w43h6")
 }
 autoplay = "idle"
 
